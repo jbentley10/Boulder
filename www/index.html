@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
+    <!-- <script src="cordova.js"></script> -->
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+  </head>
+  <body ng-app="starter" ng-controller="SlideController">
+    <!-- Splash Screen 0 -->
+      <ion-view>
+        <ion-pane>
+          <ion-content>
+            <ion-slide-box>
+
+              <!-- Slide 0 Splash Screen -->
+              <ion-slide>
+                <div class="header-text container">
+                  <h1>Bolder</h1>
+                  <p>Be bolder. Share climbing progress with friends.</p>
+                </div>
+
+                <div class="add-problem-button">
+                  <a class="add-problem button" ng-click="slideNext()">+ Add Problem</a>
+                </div>
+              </ion-slide>
+
+              <!-- Slide 1 -->
+              <ion-slide>
+                <div class="grade-input">
+                  <p>Enter Grade</p>
+                  <div class="input-field">
+                    <input type="number">
+                  </div>
+                </div>
+
+                <div class="add-problem-button">
+                  <a class="add-problem button" ng-click="slideNext()">Confirm Grade</a>
+                </div>
+              </ion-slide>
+
+              <!-- Slide 2 -->
+              <ion-slide>
+                <div class="attempts-input">
+                  <p>Enter Number of Attempts</p>
+                  <input type="number">
+                </div>
+
+                <div class="add-problem-button">
+                  <a class="add-problem button" ng-click="slideNext()">Confirm Attempts</a>
+                </div>
+              </ion-slide>
+            </ion-slide-box>
+          </ion-content>
+        </ion-pane>
+      </ion-view>
+  </body>
+</html>

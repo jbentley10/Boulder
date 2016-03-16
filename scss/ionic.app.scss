@@ -1,0 +1,91 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+.pane {
+  background: url(../img/bouldering.jpg); //#FFEEE4;
+
+  h1 {
+    text-align: center;
+    color: #000;
+  }
+
+  p {
+    text-align: center;
+    color: #000;
+  }
+
+  a {
+    text-align: center;
+    margin: 0 auto;
+    background-color: #F17F42;
+    color: #fff;
+    width: 85%;
+
+    &:hover {
+      background-color: #CE6D39;
+    }
+  }
+
+  .header-text {
+    background-color: #FFEEE4;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .scroll {
+    margin: 50% 0 0 0;
+  }
+
+  .add-problem-button {
+    text-align: center;
+    margin-top: 50%;
+  }
+
+  .slider-pager {
+    display: none;
+  }
+
+  .grade-input, .attempts-input {
+    p {
+      background-color: #FFEEE4;
+      border-radius: 10px;
+      padding: 20px;
+      color: #000;
+      font-size: 1.5em;
+    }
+
+    .input-field {
+      display: inline;
+    }
+
+    input {
+      margin: 0 auto;
+
+      &:before {
+        content: "V";
+        font-size: 3.2em;
+        color: #000;
+      }
+    }
+  }
+}

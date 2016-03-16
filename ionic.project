@@ -1,0 +1,12 @@
+{
+  "name": "Bolder",
+  "app_id": "c0bfaf14",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
